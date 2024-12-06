@@ -1,0 +1,5 @@
+car: 0, x:1 , y:8 , dir:0  , map[y][x]: 2 
+car: 1, x:1 , y:20 , dir:0  , map[y][x]: 2 
+car: 2, x:1 , y:24 , dir:0  , map[y][x]: 2 
+car: 3, x:24 , y:9 , dir:1  , map[y][x]: 2 
+car: 4, x:24 , y:11 , dir:1  , map[y][x]: 2 

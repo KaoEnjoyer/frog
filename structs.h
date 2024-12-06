@@ -4,10 +4,15 @@
 typedef int Color;
 
 typedef enum {
-    enemy,
-    tricky,
-    freindly
+    ENEMY,
+    TRICKY,
+    FREIND
 }car_type;
+
+typedef enum {
+    CAR_LEFT,
+    CAR_RIGHT
+}car_diercion;
 
 typedef enum{
     UP,
@@ -23,6 +28,7 @@ typedef struct{
     Color color;
     unsigned int x;
     unsigned int y;
+    unsigned int speed;
 }Frog;
 
 typedef struct
@@ -30,8 +36,9 @@ typedef struct
     unsigned int x;
     unsigned int y; 
     unsigned int length;
-    Color color;
+    int color;
     int speed;
+    car_diercion direction;
     car_type type;
 }Car;
 
@@ -64,6 +71,8 @@ typedef struct{
     Frog* my_frog;
     Map* my_map;
     Timer* my_timer;
+    Car* car_list;
+    unsigned int num_of_cars;
     bool is_over;
 
 }Game; 
